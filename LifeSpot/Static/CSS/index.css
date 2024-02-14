@@ -50,6 +50,8 @@ header {
 
 body {
     padding-left: 11%;
+}
+body, header, footer, video.video-container {
     background-color: #323712;
 }
 
