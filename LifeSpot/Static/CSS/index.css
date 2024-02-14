@@ -66,3 +66,11 @@ body, aside, header, footer, .bordered, .navbar, .video-container {
 .navber, a {
     color: darkgray;
 }
+.inputstyle{
+    border-width:4px;
+    border-style:solid;
+    broder-color:white;
+}
+.inputstyle:focus{
+    border-color:red;
+}
