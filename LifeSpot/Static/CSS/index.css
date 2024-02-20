@@ -19,14 +19,11 @@ footer {
     margin-left:1%;
 }
 
-header {
+#header-id {
     color: black;
     padding-left: 1%;
     text-align: center;
     padding-top: 1.2%;
-}
-
-#header-id {
     color: #ACE00D;
 }
 
