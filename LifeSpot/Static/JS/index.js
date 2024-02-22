@@ -10,19 +10,23 @@ function checkAge() {
         window.location.href = "http://www.google.com";
     }
 }
+
 function handleSession() {
     session.set("userAgent", window.navigator.userAgent);
     let dataNow = new Date().toLocaleString();
     session.set("date", dataNow)
 }
+
 const sessionLog = function () {
     for (let item in session) {
         console.log(item);
     }
 }
+
 const inputParseFunction = function () {
     return document.getElementsByTagName('input')[0].value.toLowerCase();
 }
+
 function searchFilter() {
     let elements = document.getElementsByClassName('video-container');
     for (let i = 0; i < elements.length; i++) {
@@ -35,4 +39,8 @@ function searchFilter() {
             titleVideo.style.display = 'none';
         }
     }
+}
+
+function subOnMy() {
+    setTimeout(() => alert('Подпишись!'), 60000);
 }
