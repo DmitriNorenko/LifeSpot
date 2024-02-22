@@ -15,8 +15,8 @@ footer {
     bottom: 0;
     font-size: medium;
     color: dimgray;
-    line-height:66%;
-    margin-left:1%;
+    line-height: 66%;
+    margin-left: 1%;
 }
 
 #header-id {
@@ -48,6 +48,7 @@ footer {
 body {
     padding-left: 11%;
 }
+
 body, header, footer, video.video-container {
     background-color: #323712;
 }
@@ -63,11 +64,39 @@ body, aside, header, footer, .bordered, .navbar, .video-container {
 .navber, a {
     color: darkgray;
 }
-.inputstyle{
-    border-width:4px;
-    border-style:solid;
-    broder-color:white;
+
+.inputstyle {
+    border-width: 4px;
+    border-style: solid;
+    broder-color: white;
 }
-.inputstyle:focus{
-    border-color:red;
+
+    .inputstyle:focus {
+        border-color: red;
+    }
+
+#aboutButtonStyle {
+    border: 3px;
+    border-style: solid;
+    background-color: #ACE00D;
 }
+
+    #aboutButtonStyle:hover {
+        color: white;
+        border-color: black;
+    }
+
+.userFeedback {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.showFeedback {
+    font-size: 1.3rem;
+    color: white;
+}
+
+    .showFeedback em {
+        font-size: 1.5rem;
+        color: #ACE00D;
+    }
