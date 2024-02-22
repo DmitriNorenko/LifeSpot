@@ -1,5 +1,5 @@
 ﻿let userAbout = new Map();
-function addComment(){
+function addComment() {
     userAbout.set("name", prompt("Введите свое имя: "));
     userAbout.set("comment", prompt("Введите комментарий: "));
     userAbout.set("date", new Date().toLocaleString());
