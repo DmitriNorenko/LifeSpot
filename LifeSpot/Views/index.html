@@ -5,25 +5,18 @@
     <title>LifeSpot</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
     <script src="/Static/JS/index.js"></script>
+    <script>
+       checkAge();
+        sessionLog();
+    </script>
 </head>
 <body>
     <header id="header-id">
         <h1>LifeSpot — прямые трансляции с улиц.</h1>
         <p>Можете выбрать улицу для просмотра.</p>
-        <input type="text" class="inputstyle" oninput="let elements = document.getElementsByClassName('video-container'); for (let i = 0; i < elements.length; i++)
-            {
-    let titleVideo = elements[i];
-    let discriptionVideo = titleVideo.getElementsByTagName('h3')[0];
-    if (discriptionVideo.innerText.toLowerCase().includes(document.getElementsByTagName('input')[0].value.toLowerCase())) {
-        titleVideo.style.display = 'inline-block';
-    }
-    else {
-         titleVideo.style.display = 'none';
-    }
-            }" size=50%>
+        <input type="text" class="inputstyle" oninput="searchFilter();" size=50%>
     </header>
     <main>
-
         <div class="video-container">
             <iframe width="500" height="300" src="https://www.youtube.com/embed/h1wly909BYw?si=eq4-OOjeKLhIqWRJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h3>Москва</h3>
